@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    background-color: mediumseagreen;
+  }
+      
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:lightskyblue;
+  }
+  
+  li {
+    float: left;
+    word-spacing: 10px;
+    text-align: center;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
