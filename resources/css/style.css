@@ -1,27 +1,56 @@
-body {
+.home  {
     margin: 0 auto;
     max-width: 50em;
-    background-color: mediumseagreen;
+    background-color: lightsalmon;
   }
-      
-  ul {
-    list-style-type: none;
+
+  .home h1 {
+    font: bold;
+    font-size: 50px;
+    font-style: italic;
+}
+
+#photo {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color:lightskyblue;
-  }
-  
-  li {
-    float: left;
-    word-spacing: 10px;
-    text-align: center;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    list-style-type: none;
+}
+
+li a{
+    float: left;
+    word-spacing: 10px;        
+    text-align: center;
+    display: block;
+    color: black;
+    padding: 14px 16px;
+       
+}
+
+    
+
+
+
+.about {
+    margin: 0 auto;
+    max-width: 50em;
+    background-color: lightyellow;
+
   }
+  
+  
+
+
+
+
+
+  
