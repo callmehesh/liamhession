@@ -1,20 +1,29 @@
+
 body {
     margin: 0 auto;
     max-width: 50em;
     background-color: lightsalmon;
   }
 
-.home h1 {
-    font: bold;
-    font-size: 50px;
-    font-style: italic;
+h1{
+    font-style: bold;
+    font-size: 35px;
+    font-family: sans-serif;
+    background-color: pink;
 }
-.about h1 {
-    font: bold;
-    font-size: 50px;
+
+h2{
     font-style: italic;
+    font-size: 25px;
+    font-family: sans-serif;
+    background-color: pink;
 }
-  
+
+p{
+    font-size:15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: mediumseagreen;
+}
 
 #photo {
     -webkit-transform:rotate(90deg);
@@ -24,21 +33,31 @@ body {
     transform: rotate(90deg);
 }
 ul{
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color:lightskyblue;
     text-decoration: none;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+li {
+    float: left;
 }
 
 li a{
-    float: left;
-    word-spacing: 5px;        
-    text-align: center;
     display: block;
     color: black;
+    text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+  }
        
 
 
