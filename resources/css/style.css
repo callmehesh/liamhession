@@ -1,38 +1,73 @@
+#banner {
+    height: 46rem;
+    background-image: url('');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-body {
-    margin: 0 auto;
-    max-width: 50em;
-    background-color: lightsalmon;
-  }
-
-h1{
+#banner h1 {
+    font-size: 3.75rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: left;
     font-style: bold;
-    font-size: 35px;
-    font-family: sans-serif;
-    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
 }
 
-h2{
-    font-style: italic;
-    font-size: 25px;
-    font-family: sans-serif;
-    background-color: pink;
+header {
+    background-color: #263d36;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    text-align: center;
 }
-
-p{
-    font-size:15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: mediumseagreen;
-}
-
-#photo {
+.liam {
     -webkit-transform:rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
+    float: left;
+  }
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    background-color: lightblue;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: black;
+  }
+
+h2 {
+    font-style: italic;
+    font-size: 25px;
+    font-family: sans-serif;
+    background-color:
+    margin-top: 1em;
+    padding-top: 1em;
+    }
+
+p {
+    color: black;
+    font-size:15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:
+    margin-top: 1em;
+    padding-top: 1em;
 }
-ul{
+
+ul {
     overflow: hidden;
     background-color:lightskyblue;
     text-decoration: none;
@@ -47,7 +82,7 @@ li {
     float: left;
 }
 
-li a{
+li a {
     display: block;
     color: black;
     text-align: center;
@@ -57,9 +92,21 @@ li a{
 
 li a:hover {
     background-color: white;
+}
+
+
+.container {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
        
-
 
   
   
