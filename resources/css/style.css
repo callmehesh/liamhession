@@ -104,7 +104,22 @@ h3 {
    grid-template-columns: 250px 250px 250px 250px;
    grid-template-rows: 270px 270px;
  }
+
+ .period1 {
+   background-color: lightcoral;
+ }
+
+ .period2 {
+  background-color: greenyellow;
+ }
+
+ .period3 {
+   background-color: blue;
+ }
   
+ .period4 {
+   background-color: orange;
+ }
  h4 {
    font-size: 20px;
    font-family: 'Roboto', sans-serif;
