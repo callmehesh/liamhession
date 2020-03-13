@@ -38,6 +38,17 @@ body {
 /* About Page */
 
 /* About Nav Bar */
+
+nav {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-area: "nav nav";
+  align-self: center;
+  justify-self: center;
+ }
+
 ul {
   overflow: hidden;
   background-color:lightskyblue;
@@ -70,7 +81,9 @@ li a:hover {
 }
 
 /* About Content */
-
+main {
+  display: grid;
+}
 h1{
     font-style: italic;
     font-size: 25px;
@@ -114,7 +127,7 @@ h3 {
  }
 
  .period3 {
-   background-color: blue;
+   background-color:#086788;
  }
   
  .period4 {
@@ -151,11 +164,19 @@ header {
   background-size: cover;
   line-height: 1.2;
   text-align: center;
-  height: 250px
+  height: 250px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-area: "header header";
+  align-self: center;
+  justify-self: stretch;
+  grid-column-start: 1;
+  grid-column-end: span 4;
 }
 
 #Shreddit {
   font-size: 100px;
+
 }
 
  .container {
@@ -164,29 +185,11 @@ header {
    position: relative;
    margin: auto;
    grid-gap: 10px;
-   grid-template-columns: 250px 250px 250px;
+   grid-template-columns: 250px 250px 250px 250px;
    grid-template-rows: 200px 200px 200px 200px;
  }
-
- .header {
-   grid-column-start: 1;
-   grid-column-end: 4;
-   grid-area: "header header";
-   align-self: center;
-   justify-self: stretch;
- }
-
- .nav {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-area: "nav nav";
-  align-self: center;
-  justify-self: center;
- }
- 
- .videos {
+  
+ .video {
    grid-column-start: 1;
    grid-column-end: span 2;
    grid-row-start: span 3;
@@ -196,21 +199,33 @@ header {
  }
 
  .blog {
-  grid-column-start: 3;
-  grid-column-end: span 4;
-  grid-row-start: span 3;
+  grid-column-start: 1;
+  grid-column-end:  5;
+  grid-row-start: 4;
   grid-area: "right";
   align-self: center;
   justify-self: right;
  }
 
  .footer {
-   grid-column-start: span 4;
+   grid-column-start: 1 span 4;
    grid-row: span 4;
    grid-area: "footer footer";
    align-self: center;
    justify-self: center;
 
+ }
+
+ .reports {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 3;
+ }
+ 
+ .surfnav {
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  grid-row-start: 2;
  }
 
 
