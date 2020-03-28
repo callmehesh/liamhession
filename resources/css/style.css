@@ -16,7 +16,6 @@ body {
 #banner h1 {
     height: 46rem;
     display: flex;
-    background-color: white;
     font-size: 3.75rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -26,7 +25,11 @@ body {
 }
 
 #name {
-    color: pink;
+  color: lightblue;
+}
+
+#name:hover {
+  background-color: black;
 }
 /* Photo of Liam */
 
@@ -40,14 +43,8 @@ body {
 /* About Nav Bar */
 
 nav {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-area: "nav nav";
-  align-self: center;
-  justify-self: center;
- }
+ display: flex;
+}
 
 ul {
   overflow: hidden;
@@ -58,6 +55,7 @@ ul {
   padding: 0;
   font-family: Verdana, Tahoma, sans-serif;
   font-size: larger;
+  width: 950px;
 }
 
 li {
@@ -65,7 +63,7 @@ li {
 }
 
 li a {
-  display: grid;
+  display: flex;
   color: black;
   text-align: center;
   padding: 14px 16px;
@@ -76,15 +74,12 @@ li a:hover {
   background-color: white;
 }
 
-#social-links {
-  float: right;
-}
 
 /* About Content */
 main {
-  display: grid;
+  display: flex;
 }
-h1{
+.about h1{
     font-style: italic;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
@@ -92,7 +87,7 @@ h1{
     color: black;
     }
 
-h2 {
+.about h2 {
     font-style: italic;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
@@ -133,6 +128,18 @@ h3 {
  .period4 {
    background-color: orange;
  }
+ .period5 {
+  background-color: yellow;
+ }
+ .period6 {
+  background-color: turquoise;
+ }
+ .period7 {
+  background-color: magenta;
+ }
+ .period8 {
+  background-color: mediumaquamarine;
+ }
  h4 {
    font-size: 20px;
    font-family: 'Roboto', sans-serif;
@@ -147,17 +154,22 @@ p {
     display: grid;
 }
 
-
 .box {
-    width: 1000px;
+    width: 950px;
     height: 450px;
     margin: 10px;
     padding: 25px;
     border: 5px solid black;
   }
 
+
+
+
+
+
+
   /* Grid Page */
-header {
+/* header {
   background-color: #263d36;
   background-position: center top;
   background-repeat: no-repeat;
@@ -228,7 +240,52 @@ header {
   grid-row-start: 2;
  }
 
+/* SHreddit */
+/* h1 {
+  text-align: center;
+  color: blue;
+  font-size: 100px;
+}
+.surftab {
+  text-align: left;
+  font-size: 40px;
+  background-color: turquoise;
+}
 
+.skitab {
+  text-align: center;
+  font-size: 40px;
+  background-color: white;
+  color: red;
+}
+
+.sendsection {
+  text-align: right;
+  font-size: 40px;
+  background-color: lightseagreen;
+}
+
+.surf {
+  color: blue;
+  size: 25px;
+  font-style: bold;
+  
+}
+
+.ski {
+  background-color: lightblue;
+}
+
+.image {
+  height: 500px;
+  width: 200px;
+}
+
+.header {
+  background-color: blanchedalmond;
+  text-align: center;
+  font-size: 40px;
+} */ 
 
 
 
