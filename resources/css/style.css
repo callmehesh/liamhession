@@ -105,26 +105,20 @@ h3 {
 }
 
 .body-wrap {
-   display: grid;
-   position: relative;
-   margin: auto;
-   grid-gap: 10px;
-   grid-template-columns: 250px 250px 250px 250px;
-   grid-template-rows: 270px 270px;
- }
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
 
  .period1 {
    background-color: lightcoral;
  }
-
  .period2 {
   background-color: greenyellow;
  }
-
  .period3 {
    background-color:#086788;
  }
-  
  .period4 {
    background-color: orange;
  }
@@ -145,15 +139,12 @@ h3 {
    font-family: 'Roboto', sans-serif;
    color: pink;
  } 
-
 p {
     color: black;
     font-size:15px;
     font-family: 'Roboto', sans-serif;
     padding: 1em;
-    display: grid;
 }
-
 .box {
     width: 950px;
     height: 450px;
@@ -162,148 +153,39 @@ p {
     border: 5px solid black;
   }
 
+/* Shreddit Content */
 
-
-
-
-
-
-  /* Grid Page */
-/* header {
-  background-color: #263d36;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  line-height: 1.2;
+header {
   text-align: center;
-  height: 250px;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-area: "header header";
-  align-self: center;
-  justify-self: stretch;
-  grid-column-start: 1;
-  grid-column-end: span 4;
 }
 
-#Shreddit {
-  font-size: 100px;
-
+section , #surf , #snow , #skate {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
- .container {
-   display: grid;
-   max-width: 900px;
-   position: relative;
-   margin: auto;
-   grid-gap: 10px;
-   grid-template-columns: 250px 250px 250px 250px;
-   grid-template-rows: 200px 200px 200px 200px;
- }
-  
- .video {
-   grid-column-start: 1;
-   grid-column-end: span 2;
-   grid-row-start: span 3;
-   grid-area: "left";
-   align-self: center;
-   justify-self: left;
- }
+.reports {
+  flex: 1;
+}
 
- .blog {
-  grid-column-start: 1;
-  grid-column-end:  5;
-  grid-row-start: 4;
-  grid-area: "right";
-  align-self: center;
-  justify-self: right;
- }
+.news {
+  flex: 2;
+}
 
- .footer {
-   grid-column-start: 1 span 4;
-   grid-row: span 4;
-   grid-area: "footer footer";
-   align-self: center;
-   justify-self: center;
+.video {
+  flex: 3;
+}
 
- }
 
- .reports {
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 3;
- }
+
+
+
+
+
+
  
- .surfnav {
-  grid-column-start: 1;
-  grid-column-end: span 4;
-  grid-row-start: 2;
- }
-
-/* SHreddit */
-/* h1 {
-  text-align: center;
-  color: blue;
-  font-size: 100px;
-}
-.surftab {
-  text-align: left;
-  font-size: 40px;
-  background-color: turquoise;
-}
-
-.skitab {
-  text-align: center;
-  font-size: 40px;
-  background-color: white;
-  color: red;
-}
-
-.sendsection {
-  text-align: right;
-  font-size: 40px;
-  background-color: lightseagreen;
-}
-
-.surf {
-  color: blue;
-  size: 25px;
-  font-style: bold;
-  
-}
-
-.ski {
-  background-color: lightblue;
-}
-
-.image {
-  height: 500px;
-  width: 200px;
-}
-
-.header {
-  background-color: blanchedalmond;
-  text-align: center;
-  font-size: 40px;
-} */ 
-
-
-
-
-/* Video formatting
-.container {
-    width: 50%;
-    height: 200px;
-    overflow: hidden;
-  }
-  
-.container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-       
-
   
   
 
