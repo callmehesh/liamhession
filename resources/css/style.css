@@ -51,7 +51,7 @@ ul {
   padding: 0;
   font-family: Verdana, Tahoma, sans-serif;
   font-size: larger;
-  width: 950px;
+  width: 970px;
 }
 
 li {
@@ -162,37 +162,33 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 header {
   text-align: center;
   font-size: 40px;
   font-style: oblique;
   text-decoration: solid;
-}
-
-.activity-links div {
-  border: 1px #3b3f45 solid;
-  padding: 10px;
+  position: relative;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
 }
 
 .shreddit {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .reports {
   flex: 1;
 }
 
-.news {
-  flex: 2;
-}
 
-.video {
-  flex: 3;
-}
+
+
+
+
+
 
 
 
