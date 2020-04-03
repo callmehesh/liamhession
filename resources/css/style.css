@@ -1,7 +1,6 @@
 /* All Pages*/
 
 body {
-  background-color: #3b3f45;
   line-height: 1.5;
   margin: 0 auto;
   font-family:'Roboto', sans-serif;
@@ -42,9 +41,6 @@ body {
 
 /* About Nav Bar */
 
-nav {
- display: flex;
-}
 
 ul {
   overflow: hidden;
@@ -61,6 +57,9 @@ ul {
 li {
   float: left;
 }
+#social-links {
+  float: right;
+}
 
 li a {
   display: flex;
@@ -76,92 +75,109 @@ li a:hover {
 
 
 /* About Content */
-main {
+.about {
   display: flex;
 }
-.about h1{
-    font-style: italic;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 1em;
-    color: black;
-    }
 
-.about h2 {
+.about h1 , h2 {
     font-style: italic;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
     margin-top: 1em;
     text-decoration: underline;
     color: black;
-    }
-
+  }
 h3 {
-  font-style: italic;
-    font-size: 25px;
+    font-style: italic;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     margin-top: 1em;
     color: black;
 }
+p {
+   color: black;
+   font-size:15px;
+   font-family: 'Roboto', sans-serif;
+   padding: 1em;
+}
+.box {
+   width: 950px;
+   height: 450px;
+   margin: 5px;
+   padding: 5px;
+   border: 5px solid black;
+ }
 
 .body-wrap {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    flex-wrap: wrap;
+   text-align: center;
+   width: 400px;
 }
 
- .period1 {
+ #flex-1 .period1 {
    background-color: lightcoral;
+   flex: 1;
  }
- .period2 {
+ #flex-1 .period2 {
   background-color: greenyellow;
+  flex: 2;
  }
- .period3 {
+ #flex-1 .period3 {
    background-color:#086788;
+   flex: 3;
  }
- .period4 {
+ #flex-1 .period4 {
    background-color: orange;
+   flex: 4;
  }
- .period5 {
+ #flex-2 .period5 {
   background-color: yellow;
+  flex: 5
  }
- .period6 {
+ #flex-2 .period6 {
   background-color: turquoise;
+  flex: 6
  }
- .period7 {
+ #flex-2 .period7 {
   background-color: magenta;
+  flex: 7
  }
- .period8 {
+ #flex-2 .period8 {
   background-color: mediumaquamarine;
+  flex: 8
  }
- h4 {
-   font-size: 20px;
-   font-family: 'Roboto', sans-serif;
-   color: pink;
- } 
-p {
-    color: black;
-    font-size:15px;
-    font-family: 'Roboto', sans-serif;
-    padding: 1em;
-}
-.box {
-    width: 950px;
-    height: 450px;
-    margin: 10px;
-    padding: 25px;
-    border: 5px solid black;
-  }
+ #flex-2 .period9 {
+  background-color: olivedrab;
+  flex: 9
+ }
+ 
 
 /* Shreddit Content */
 
-header {
-  text-align: center;
+#title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-section , #surf , #snow , #skate {
+header {
+  text-align: center;
+  font-size: 40px;
+  font-style: oblique;
+  text-decoration: solid;
+}
+
+.activity-links div {
+  border: 1px #3b3f45 solid;
+  padding: 10px;
+}
+
+.shreddit {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
