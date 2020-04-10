@@ -51,10 +51,9 @@ ul {
   padding: 0;
   font-family: Verdana, Tahoma, sans-serif;
   font-size: larger;
-  width: 970px;
 }
 
-li {
+nav li {
   float: left;
 }
 #social-links {
@@ -94,12 +93,7 @@ h3 {
     margin-top: 1em;
     color: black;
 }
-p {
-   color: black;
-   font-size:15px;
-   font-family: 'Roboto', sans-serif;
-   padding: 1em;
-}
+
 .box {
    width: 950px;
    height: 450px;
@@ -108,50 +102,54 @@ p {
    border: 5px solid black;
  }
 
+ #about-me p {
+  color: black;
+  font-size:15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 1em;
+ }
+
 .body-wrap {
    display: flex;
-   flex-direction: column;
    flex-wrap: wrap;
-   text-align: center;
-   width: 400px;
+  justify-content: center;
 }
 
- #flex-1 .period1 {
+.timeline-box {
+  margin: 1em;
+  padding: 1em;
+}
+
+ #period1 {
    background-color: lightcoral;
-   flex: 1;
  }
- #flex-1 .period2 {
+ #period2 {
   background-color: greenyellow;
-  flex: 2;
+
  }
- #flex-1 .period3 {
+  #period3 {
    background-color:#086788;
-   flex: 3;
+   
  }
- #flex-1 .period4 {
+  #period4 {
    background-color: orange;
-   flex: 4;
+   
  }
- #flex-2 .period5 {
+ #period5 {
   background-color: yellow;
-  flex: 5
- }
- #flex-2 .period6 {
+   }
+  #period6 {
   background-color: turquoise;
-  flex: 6
- }
- #flex-2 .period7 {
+   }
+  #period7 {
   background-color: magenta;
-  flex: 7
- }
- #flex-2 .period8 {
+   }
+ #period8 {
   background-color: mediumaquamarine;
-  flex: 8
- }
- #flex-2 .period9 {
+   }
+  #period9 {
   background-color: olivedrab;
-  flex: 9
- }
+   }
  
 
 /* Shreddit Content */
@@ -173,15 +171,47 @@ header {
   letter-spacing: 2px;
 }
 
-.shreddit {
+#shreddit-nav ul {
+  width: 800px;
+}
+.shreddit-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
+  width: 800px;
 }
 
-.reports {
-  flex: 1;
+.shreddit-container ul {
+  width: 250px;
 }
+
+.shreddit-container #surf {
+  flex: 1;
+  padding-right: 1.5em;
+}
+.shreddit-container #snow {
+  flex: 2;
+  padding-right: 1.5em;
+
+}
+.shreddit-container #skate{
+  flex: 3;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  
+}
+
+
+
+
+ 
 
 
 
