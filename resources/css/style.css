@@ -5,7 +5,7 @@ body {
   margin: 0 auto;
   font-family:'Roboto', sans-serif;
   max-width: 50em;
-  background-color: lightblue;
+  background-color: #a3adb8;
   align-self: center;
   justify-self: stretch;
 }
@@ -24,11 +24,14 @@ body {
 }
 
 #name {
-  color: lightblue;
+  color: whitesmoke;
+  -webkit-text-stroke: 0.75px black;
+  text-decoration: none;
+
 }
 
 #name:hover {
-  background-color: black;
+  background-color: #659dbd;
 }
 /* Photo of Liam */
 
@@ -44,7 +47,7 @@ body {
 
 ul {
   overflow: hidden;
-  background-color:lightskyblue;
+  background-color:#BC986A;
   text-decoration: none;
   list-style-type: none;
   margin: 0;
@@ -69,16 +72,15 @@ li a {
 }
 
 li a:hover {
-  background-color: white;
+  background-color: #DAAD86;
 }
-
 
 /* About Content */
 .about {
   display: flex;
 }
 
-.about h1 , h2 {
+.about h1 {
     font-style: italic;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
@@ -90,8 +92,7 @@ h3 {
     font-style: italic;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    margin-top: 1em;
-    color: black;
+    margin-top: 1em; 
 }
 
 .box {
@@ -99,7 +100,7 @@ h3 {
    height: 450px;
    margin: 5px;
    padding: 5px;
-   border: 5px solid black;
+   border: 5px solid #659dbd;
  }
 
  #about-me p {
@@ -113,44 +114,44 @@ h3 {
    display: flex;
    flex-wrap: wrap;
   justify-content: center;
+  height:800px;
 }
 
 .timeline-box {
   margin: 1em;
   padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+  width: 260px;
+  transform-style: preserve-3d;
+  transition: all 0.1s ease;
+
 }
 
- #period1 {
-   background-color: lightcoral;
- }
- #period2 {
-  background-color: greenyellow;
+.timeline-box:hover {
+  transform: rotateY(180deg);
+}
 
- }
-  #period3 {
-   background-color:#086788;
-   
- }
-  #period4 {
-   background-color: orange;
-   
- }
- #period5 {
-  background-color: yellow;
-   }
-  #period6 {
-  background-color: turquoise;
-   }
-  #period7 {
-  background-color: magenta;
-   }
- #period8 {
-  background-color: mediumaquamarine;
-   }
-  #period9 {
-  background-color: olivedrab;
-   }
- 
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  background-color:#DAAD86;
+
+}
+
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  text-align: center;
+  background-color: #fbeec1;
+}
+
 
 /* Shreddit Content */
 
@@ -186,30 +187,29 @@ header {
   width: 250px;
 }
 
-.shreddit-container #surf {
-  flex: 1;
-  padding-right: 1.5em;
-}
-.shreddit-container #snow {
-  flex: 2;
-  padding-right: 1.5em;
-
-}
-.shreddit-container #skate{
-  flex: 3;
-}
-
 .video-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 800px;
+  width: 1100px;
   
 }
 
+.row div{
+  display: inline-block;
+}
 
+.row {
+  align-items: flex-start;
+  display: flex;
+}
 
+.row-item {
+  padding-right: 1.5em;
+}
+
+#video {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
 
  
 
