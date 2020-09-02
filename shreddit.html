@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shreddit Blog</title>
-</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Shreddit</title>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="description" content="The official blog of Liam Hession. I write about investing, the environment, learning, and some experiences of mine along the way.">
+        <meta property="og:site_name" content="Liam Hession">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="The official blog of Liam Hession. I write about investing, the environment, learning, and some experiences of mine along the way.">
+    </head>
 <body>
-    <header>
-        <h1 id="title">Shreddit</h1>
-        <img src="./resources/images/barrel.jpg" alt="Barrel" style="width:100%">
-    </header>
-    <nav id="shreddit-nav">
-        <ul>
-            <li><a href="#surf">Surf</a></li>
-            <li><a href="#skate">Skate</a></li>
-            <li><a href="#snow">Snow</a></li>
-        </ul>
-    </nav>
-
-    <div class="shreddit-container">
-
+    <div class="site-wrapper">
+        <header class="site-home-header">
+            <img src="./resources/images/barrel.jpg" alt="Barrel" style="width:100%">
+            <div class="shreddit-header-content">
+                <h1 id="shreddit-title">Shreddit</h1>
+                    <nav id="shreddit-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li id="surf-header-nav"><a href="#surf">Surf</a></li>
+                            <li id="skate-header-nav"><a href="#skate">Skate</a></li>
+                        </ul>
+                    </nav>
+            </div>
+        </header>
+       
+    <div class="shreddit-main-content">
         <section id="surf">
             <h1>Surf</h1>
             <div class="row">
@@ -30,7 +37,6 @@
                     <ul>
                         <li><a href="https://stabmag.com/" target="_blank">Stab Magazine</a></li>
                         <li><a href="https://www.surfer.com/"target="_blank">Surfer Magazine</a></li>
-                        <li><a href="https://www.powder.com/" target="_blank">Powder Magazine</a></li>
                     </ul>
                 </div>
                 <div class="row-item">
@@ -41,9 +47,10 @@
                             <li><a href="https://www.surfline.com/surf-forecasts/north-shore/58581a836630e24c44878fcb" target="_blank">North Shore</a></li>
                             <li><a href="https://www.surfline.com/surf-forecasts/northern-outer-banks/58581a836630e24c44878fdd" target="_blank">Outer Banks</a></li>
                         </ul>
+                    <H4><a href="https://github.com/callmehesh/meta-surf-forecast" target="_blank">API Integration Github Repository</a></H4>
                 </div>
                 <div class="row-item"> 
-                    <h3>Articles</h3> <!--Insert News Widget/ something that stays up to date-->
+                    <h3>Articles</h3>
                     <ul>
                         <li><a href="https://www.surfline.com/surf-news/swim-surf-longer/17102?fbclid=IwAR0uLhUvCWuuDoRnxIxO-n-7Ow2bK0LQ6aO_M8EcU-kL1OTpastHQ-nEi5Y">How to Surf Longer</a></li>
                         <li><a href="https://stabmag.com/style/ryan-burch-on-why-he-wont-shape-a-log-for-kelly-slater-asymmetrical-surfboards-and-the-pursuit-of-happiness/?utm_medium=email&utm_campaign=Stab%20Interview%20Ryan%20Burch&utm_content=Stab%20Interview%20Ryan%20Burch+CID_1acec624242b45148e630fbcff3b2184&utm_source=Email%20marketing%20software&utm_term=The%20Stab%20Interview%20Ryan%20Burch" target="_blank">Trouble in Paradise</a></li>
@@ -51,38 +58,6 @@
                 </div>
             </div>
         </section>
- 
-        <section id="snow">
-            <h1>Snow</h1>
-            <div class="row">
-                <div class="row-item"> 
-                <h3>Media</h3>
-                    <ul>
-                        <li><a href="https://www.powder.com/" target="_blank">Powder Magazine</a></li>
-                        <li><a href="https://www.snowboarder.com/" target="_blank">Snowboarder Mag</a></li>
-                        <li><a href="https://www.skimag.com/" target="_blank">Ski Magazine</a></li>
-                    </ul>
-                </div>
-                <div class="row-item">
-                    <h3>Reports</h3>
-                    <ul>
-                        <li><a href="https://www.snow-forecast.com/resorts/Aspen-Mountain/6day/mid" target="_blank">Aspen</a></li>
-                        <li><a href="https://opensnow.com/dailysnow/tahoe" target="_blank">Lake Tahoe</a></li>
-                        <li><a href="https://www.sunvalley.com/mountain-snow-report" target="_blank">Sun Valley</a></li>
-                        <li><a href="https://www.snow-forecast.com/countries/Russia/resorts" target="_blank">Russia</a></li>
-
-                    </ul> 
-                </div>
-                <div class="row-item"> 
-                    <h3>Articles</h3> 
-                    <ul>
-                        <li><a href="https://www.skimag.com/ski-performance/ski-fit-how-to-strengthen-stabilizer-muscles">Ski Fitness Tips</a></li>
-                        <li><a href="https://www.skimag.com/ski-resort-life/resorts-of-the-year" target="_blank">Resorts of the Year</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
         <section id="skate">
             <h1>Skate</h1>
             <div class="row">
@@ -150,5 +125,39 @@
     </footer>
     </div>
 <script type="text/javascript" src="./resources/js/index.js"></script>
+</div>
 </body>
 </html>
+
+ <!--
+        <section id="snow">
+            <h1>Snow</h1>
+            <div class="row">
+                <div class="row-item"> 
+                <h3>Media</h3>
+                    <ul>
+                        <li><a href="https://www.powder.com/" target="_blank">Powder Magazine</a></li>
+                        <li><a href="https://www.snowboarder.com/" target="_blank">Snowboarder Mag</a></li>
+                        <li><a href="https://www.skimag.com/" target="_blank">Ski Magazine</a></li>
+                    </ul>
+                </div>
+                <div class="row-item">
+                    <h3>Reports</h3>
+                    <ul>
+                        <li><a href="https://www.snow-forecast.com/resorts/Aspen-Mountain/6day/mid" target="_blank">Aspen</a></li>
+                        <li><a href="https://opensnow.com/dailysnow/tahoe" target="_blank">Lake Tahoe</a></li>
+                        <li><a href="https://www.sunvalley.com/mountain-snow-report" target="_blank">Sun Valley</a></li>
+                        <li><a href="https://www.snow-forecast.com/countries/Russia/resorts" target="_blank">Russia</a></li>
+
+                    </ul> 
+                </div>
+                <div class="row-item"> 
+                    <h3>Articles</h3> 
+                    <ul>
+                        <li><a href="https://www.skimag.com/ski-performance/ski-fit-how-to-strengthen-stabilizer-muscles">Ski Fitness Tips</a></li>
+                        <li><a href="https://www.skimag.com/ski-resort-life/resorts-of-the-year" target="_blank">Resorts of the Year</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    -->
